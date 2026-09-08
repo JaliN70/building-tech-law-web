@@ -4,7 +4,7 @@
 const APP = {
   name: "建築技術規則",
   shortName: "建築技術規則",
-  updated: "2026/09/03",
+  updated: "2026/09/15",
   author: "AJ",
 };
 
@@ -23,7 +23,7 @@ const LAWS = [
     amended: "民國 115 年 02 月 23 日",
     fullUrl: 'https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0070115',
     heroEyebrow: 'Building Design Code',
-    updated: '2026/09/03',
+    updated: '2026/09/15',
     author: 'AJ',
     attachments: [
   { label: "第 1 條補充圖例.PDF", url: "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000011573&lan=C" },
@@ -1013,7 +1013,7 @@ const LAWS = [
     amended: "民國 112 年 05 月 10 日",
     fullUrl: 'https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0070116',
     heroEyebrow: 'Building Structure Code',
-    updated: '2026/09/03',
+    updated: '2026/09/15',
     author: 'AJ',
     categories: [
   {
@@ -1978,7 +1978,7 @@ const LAWS = [
     amended: "民國 111 年 12 月 29 日",
     fullUrl: 'https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0070117',
     heroEyebrow: 'Building Equipment Code',
-    updated: '2026/09/03',
+    updated: '2026/09/15',
     author: 'AJ',
     categories: [
   {
