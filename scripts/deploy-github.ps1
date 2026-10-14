@@ -12,8 +12,14 @@ if ($LASTEXITCODE -ne 0) {
 
 $repo = "building-tech-law-web"
 $user = (gh api user -q .login)
-gh repo view "$user/$repo" 2>$null | Out-Null
-if ($LASTEXITCODE -ne 0) {
+$repoExists = $true
+try {
+    gh repo view "$user/$repo" 2>$null | Out-Null
+    if ($LASTEXITCODE -ne 0) { $repoExists = $false }
+} catch {
+    $repoExists = $false
+}
+if (-not $repoExists) {
     gh repo create $repo --public --source=. --remote=origin --push --description "Building technical rules (design, structure, equipment) - mobile web"
 } else {
     git push -u origin main
